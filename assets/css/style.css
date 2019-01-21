@@ -1,0 +1,58 @@
+/* Assignment: Triva-Game 
+   File: style.css
+   Programmer: Sohail Zafar */
+
+   body {
+    background-image: url("../images/backGroundParty.jpg");
+    background-size: auto;
+}
+
+    #questionForm{
+        visibility: hidden;
+    }
+    
+    .headingBox {
+        text-align: center;
+        color: yellow;
+    }
+
+    #timeHeadingBox {
+        text-align: center;
+
+    }
+    
+    #startButtonContainer {
+        text-align: center;
+    }
+
+    .startButton{
+        font-size: 24px;
+        background-color: yellow;
+    }
+    #question1Box {
+        text-align: center;
+    }
+
+    #question2Box {
+        text-align: center;
+    }
+
+    #question3Box {
+        text-align: center;
+    }
+
+    #question4Box {
+        text-align: center;
+    }
+
+    #doneButtonContainer {
+        text-align: center;
+    }
+    .doneButton{
+        font-size: 24px;
+        background-color: yellow;
+    }
+    #resultsBox {
+        text-align: center;
+        visibility: hidden;
+    }

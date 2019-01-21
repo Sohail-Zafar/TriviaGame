@@ -1,0 +1,107 @@
+<!-- Assignment Triva Game 
+     File: index.html
+     Programmer: Sohail Zafar -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wnameth=device-wnameth, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Triva Game</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body> 
+  <!-- Show Start button -->
+    <div id="StartForm">
+    <div class="headingBox">
+        <h1>Triva Triva Game</h1>
+    </div>
+
+    <br>
+    <div id="startButtonContainer">
+        <button class="startButton" onclick="questionFormLoad()">Click to start</button>
+    </div>
+  </div>
+  <!-- the questions and radio buttons -->
+    <div id="questionForm">
+    
+      <div id="timeHeadingBox">
+         <p><h2>Time Remaining: <span id="timeRemaining"></span></h2></p>
+      </div>
+      <!-- question 1 -->
+    <div id="question1Box">
+        <h3>What is the the Captial City of France?</h3>
+        <label class="radio-inline">
+                <input type="radio" name="question1"  id="question1RadioButton1" value="London">London
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="question1" id="question1RadioButton2" value="New York">New York
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="question1" id="question1RadioButton3" value="Pairs">Pairs
+              </label>
+    </div>
+    
+    <!-- question 2 -->
+    <div id="question2Box">
+        <h3>What color dose yellow and blue mixed make?</h3>
+        <label class="radio-inline">
+                <input type="radio" name="question2" id="question2RadioButton1" value="Green">Green
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="question2" id="question2RadioButton2" value="White">White
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="question2" id="question2RadioButton3" value="Black">Black
+              </label>
+    </div>
+    
+    <!-- question 3 -->
+    <div id="question3Box">
+        <h3>What is the speed limit in California in MPH?</h3>
+        <label class="radio-inline">
+                <input type="radio" name="question3" id="question3RadioButton1" value="65MPH">65MPH
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="question3" id="question3RadioButton2" value="55MPH">55MPH
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="question3" id="question3RadioButton3" value="70MPH">70MPH
+              </label>
+    </div>
+    
+    <!-- question 4 -->
+    <div id="question4Box">
+        <h3>What is the speed of sound in MPH?</h3>
+        <label class="radio-inline">
+                <input type="radio" name="question4" id="question4RadioButton1" value="55MPH">55MPH
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="question4" id="question4RadioButton2" value="1000MPH">1000MPH
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="question4" id="question4RadioButton3" value="767MPH">767MPH
+              </label>
+    </div>
+    <br>
+    <!-- Done button -->
+    <div id="doneButtonContainer">
+        <button class="doneButton" onclick="gameOver()">Done</button>
+    </div>
+    </div>
+    
+    <!-- results box -->
+    <div id="resultsBox">
+      <h2>Results</h2>
+      <h3>Correct answers: <span id="correctNumberText"></span></h3>
+      <h3>Wrong answers: <span id="wrongNumberText"></span></h3>
+      <h3>Unanswered: <span id="unansweredNumberText"></span></h3>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/trivaGame.js"></script>
+</body>
+</html>
